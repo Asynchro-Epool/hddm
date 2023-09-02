@@ -2129,7 +2129,7 @@ def _plot_func_pair(
 
     params = model_config[model_]["params"]
     parent_keys = bottom_node.parents.value.keys()
-    param_intersection = set(params).intersection(set(parent_keys))
+    param_intersection = list(set(params).intersection(set(parent_keys)))
     df = pd.DataFrame(
         np.empty((n_samples, len(param_intersection))), columns=param_intersection
     )
