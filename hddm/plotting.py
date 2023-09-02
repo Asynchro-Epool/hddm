@@ -1646,7 +1646,7 @@ def _make_bounds(
     return_shifted_by_ndt=True,
 ):
     # MULTIPLICATIVE BOUND
-    if tmp_model == "weibull":
+    if tmp_model == "weibull_cdf":
         b = np.maximum(
             sample.a.values[0]
             * model_config[tmp_model]["boundary"](
