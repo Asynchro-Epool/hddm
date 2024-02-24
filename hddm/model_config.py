@@ -1203,5 +1203,5 @@ model_config = {
 }
 
 # Models for which configs can be reused
-model_config["weibull_cdf"] = model_config["weibull"].copy()
+model_config["weibull"] = model_config["weibull_cdf"].copy()
 model_config["full_ddm2"] = model_config["full_ddm"].copy()
